@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Опросник для владельцев магических животных</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/128/3807/3807294.png"
+      type="img/png"
+    />
+  </head>
+  <body>
+    <h1>Опросник для владельцев магических животных</h1>
+    <img
+      src="https://cdn-icons-png.flaticon.com/256/7603/7603400.png"
+      alt="Панда в окружении знаков вопроса"
+      title="Озадаченная панда"
+    />
+    <form method="post">
+      <fieldset>
+        <legend><b>Расскажи о своём питомце</b></legend>
+        <div>
+          <label for="pet-name">Кличка:</label>
+          <input type="text" id="pet-name" name="pet-name" required />
+        </div>
+        <div>
+          <label for="pet-type">Вид:</label>
+          <select name="pet-type" id="pet-type" required>
+            <option value="">Выберите</option>
+            <option value="cat">Кошка</option>
+            <option value="dog">Собака</option>
+            <option value="bird">Птица</option>
+            <option value="fish">Рыба</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+        <div>
+          <label for="pet-breed">Порода:</label>
+          <input type="text" id="pet-breed" name="pet-breed" />
+        </div>
+        <div>
+          <label>Пол:</label>
+          <input
+            type="radio"
+            id="pet-male"
+            name="pet-male-female"
+            value="pet-male"
+            required
+          />
+          <label for="pet-male">Самец</label>
+          <input
+            type="radio"
+            id="pet-female"
+            name="pet-male-female"
+            value="pet-female"
+            required
+          />
+          <label for="pet-female">Самка</label>
+        </div>
+        <div>
+          <label for="pet-age">Возраст:</label>
+          <input
+            type="number"
+            id="pet-age"
+            name="pet-age"
+            min="0"
+            max="30"
+            required
+          />
+        </div>
+        <div>
+          <label>Питание:</label>
+        </div>
+        <div>
+          <label for="dry-food">Сухой корм</label>
+          <input
+            type="checkbox"
+            name="dry-wet-natural-food"
+            id="dry-food"
+            value="dry-food"
+          />
+        </div>
+        <div>
+          <label for="wet-food">Влажный корм</label>
+          <input
+            type="checkbox"
+            name="dry-wet-natural-food"
+            id="wet-food"
+            value="wet-food"
+          />
+        </div>
+        <div>
+          <label for="natural-food">Натуральный корм</label>
+          <input
+            type="checkbox"
+            name="dry-wet-natural-food"
+            id="natural-food"
+            value="natural-food"
+          />
+        </div>
+        <div>
+          <label for="pet-photo">Фото питомца</label>
+          <input type="file" name="pet-photo" id="pet-photo" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><b>Расскажи о себе</b></legend>
+        <div>
+          <label for="owner-name">Имя владельца:</label>
+          <input type="text" id="owner-name" name="owner-name" required />
+        </div>
+        <div>
+          <label for="owner-email">Адрес электронной почты:</label>
+          <input
+            type="email"
+            name="owner-email"
+            id="owner-email"
+            placeholder="example@gmail.com"
+          />
+        </div>
+        <div>
+          <label for="owner-tel">Номер телефона:</label>
+          <input
+            type="tel"
+            name="owner-tel"
+            id="owner-tel"
+            placeholder="+7-777-7777"
+          />
+        </div>
+        <div>
+          <label for="owner-comment">Комментарий владельца</label>
+          <textarea
+            name="owner-comment"
+            id="owner-comment"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+      </fieldset>
+      <button type="reset">Очистить</button>
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
